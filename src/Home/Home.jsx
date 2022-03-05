@@ -4,23 +4,23 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
-  const [roomName, setRoomName] = React.useState("");
+  const [roomCode, setRoomCode] = React.useState("");
 
-  const handleRoomNameChange = (event) => {
-    setRoomName(event.target.value);
+  const handleRoomCodeChange = (event) => {
+    setRoomCode(event.target.value);
   };
 
   return (
     <div className="home-container">
       <input
         type="text"
-        placeholder="Room"
-        value={roomName}
-        onChange={handleRoomNameChange}
-        className="text-input-field"
+        value={roomCode}
+        placeholder="Enter code"
+        onChange={handleRoomCodeChange}
+        className="code-input"
       />
-      <Link to={`/${roomName}`} className="enter-room-button">
-        Join room
+      <Link to={`/${roomCode}`} className="code-send-button">
+        Join Room
       </Link>
     </div>
   );
