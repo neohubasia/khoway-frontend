@@ -1,5 +1,5 @@
 import React from "react";
-import useChat from "../useChat";
+import useChat from "../../useChat";
 
 import "./ChatRoom.css";
 

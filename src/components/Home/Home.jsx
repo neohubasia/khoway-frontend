@@ -19,7 +19,7 @@ const Home = () => {
         onChange={handleRoomCodeChange}
         className="code-input"
       />
-      <Link to={`/${roomCode}`} className="code-send-button">
+      <Link to={`/room/${roomCode}`} className="code-send-button">
         Join Room
       </Link>
     </div>
