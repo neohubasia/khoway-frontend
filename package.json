@@ -1,5 +1,5 @@
 {
-  "name": "socket.io-react-hooks-chat",
+  "name": "khoway-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && scp -r ./build/* root@159.65.140.255:/var/www/khoway.tech/html"
   },
   "eslintConfig": {
     "extends": "react-app"
