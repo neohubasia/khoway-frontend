@@ -30,7 +30,7 @@ const Login = () => {
               <input
                 type="text"
                 class="login__input"
-                placeholder="User name / Email"
+                placeholder="Enter username"
               />
             </div>
             <div class="login__field">
@@ -38,7 +38,7 @@ const Login = () => {
               <input
                 type="password"
                 class="login__input"
-                placeholder="Password"
+                placeholder="Enter password"
               />
             </div>
             <button class="button login__submit">
@@ -56,10 +56,10 @@ const Login = () => {
           </div>
         </div>
         <div class="screen__background">
-          <span class="screen__background__shape screen__background__shape4"></span>
-          <span class="screen__background__shape screen__background__shape3"></span>
-          <span class="screen__background__shape screen__background__shape2"></span>
-          <span class="screen__background__shape screen__background__shape1"></span>
+          <span class="screen__background__shape screen__background__shape_4"></span>
+          <span class="screen__background__shape screen__background__shape_3"></span>
+          <span class="screen__background__shape screen__background__shape_2"></span>
+          <span class="screen__background__shape screen__background__shape_1"></span>
         </div>
       </div>
     </div>
