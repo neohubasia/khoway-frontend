@@ -15,7 +15,7 @@ const Home = () => {
       <input
         type="text"
         value={roomCode}
-        placeholder="Enter code"
+        placeholder="Enter Code"
         onChange={handleRoomCodeChange}
         className="code-input"
       />

@@ -2,8 +2,8 @@
 
 .home-container {
   position: fixed;
-  left: 10%;
-  right: 10%;
+  left: 20%;
+  right: 20%;
   top: 50%;
   display: flex;
   transform: translate(0, -50%);
@@ -11,22 +11,37 @@
 }
 
 .code-input {
-  padding: 24px 12px;
-  border-radius: 8px;
+  padding: 12px 12px;
   font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #ddd;
 }
 
-.code-input:focus {
+.code-input:active,
+.code-input:focus,
+.code-input:hover {
   outline: none;
+  border-bottom-color: #5f5fbb;
 }
 
 .code-send-button {
-  margin-top: 20px;
-  padding: 24px 12px;
-  border-radius: 8px;
-  font-size: 28px;
+  margin-top: 40px;
+  padding: 12px 12px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
-  color: #f6f6f9;
-  background: #666699;
+  color: #5f5fbb;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.code-send-button:active,
+.code-send-button:focus,
+.code-send-button:hover {
+  outline: none;
+  color: #ffffff;
+  background: #5f5fbb;
+  border-color: #5f5fbb;
 }

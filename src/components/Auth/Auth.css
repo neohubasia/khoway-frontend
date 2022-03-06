@@ -52,7 +52,7 @@
   height: 220px;
   width: 220px;
   border-radius: 30px;
-  background: #9999bb;
+  background: #9f9fff;
 }
 
 .screen__background__shape_3 {
@@ -61,7 +61,7 @@
   width: 200px;
   height: 500px;
   border-radius: 30px;
-  background: linear-gradient(270deg, #6f6fbb, #5f5fbb);
+  background: linear-gradient(270deg, #bdbdff, #9f9fff);
 }
 
 .screen__background__shape_4 {
@@ -70,7 +70,7 @@
   width: 200px;
   height: 400px;
   border-radius: 60px;
-  background: #9999bb;
+  background: #9f9fff;
 }
 
 /* Login Form  */
@@ -118,9 +118,7 @@
   color: #5f5fbb;
   background: #ffffff;
   border: 2px solid #ddd;
-  border-radius: 24px;
   align-items: center;
-  text-transform: uppercase;
   transition: 0.2s;
   cursor: pointer;
 }
