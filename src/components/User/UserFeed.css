@@ -1,0 +1,9 @@
+.feed-card {
+  color: #555;
+  padding: 10px;
+}
+
+.feed-card:hover {
+  cursor: pointer;
+  border: 5px solid #ddd;
+}

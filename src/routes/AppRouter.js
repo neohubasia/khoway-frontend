@@ -7,15 +7,7 @@ import Home from "../components/Home/Home";
 import SignIn from "../components/Auth/SignIn";
 import SignUp from "../components/Auth/SignUp";
 import ChatRoom from "../components/Room/ChatRoom";
-
-const ProtectedRoute = () => {
-  return (
-    <div>
-      <p>You must log in to view the page</p>
-      <button onClick={() => alert("HELLO")}>Log in</button>
-    </div>
-  );
-};
+import Profile from "../components/Profile/Profile";
 
 export const AppRouter = () => {
   return (
@@ -25,8 +17,8 @@ export const AppRouter = () => {
         <Route path="/register" component={SignUp} />
         <Route exact path="/" component={Home} />
         <Route exact path="/room/:roomId" component={ChatRoom} />
-        <PrivateRoute path="/protected">
-          <ProtectedRoute />
+        <PrivateRoute path="/profile">
+          <Profile />
         </PrivateRoute>
       </Switch>
     </Router>

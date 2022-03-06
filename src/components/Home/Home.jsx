@@ -22,6 +22,9 @@ const Home = () => {
       <Link to={`/room/${roomCode}`} className="code-send-button">
         Join Room
       </Link>
+      <Link to={`/profile`} className="profile-link-button">
+        Go Profile
+      </Link>
     </div>
   );
 };

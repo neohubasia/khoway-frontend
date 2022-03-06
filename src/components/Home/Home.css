@@ -17,15 +17,14 @@
   border-bottom: 2px solid #ddd;
 }
 
-.code-input:active,
-.code-input:focus,
 .code-input:hover {
   outline: none;
   border-bottom-color: #5f5fbb;
 }
 
-.code-send-button {
-  margin-top: 40px;
+.code-send-button,
+.profile-link-button {
+  margin-top: 30px;
   padding: 12px 12px;
   font-size: 24px;
   text-align: center;
@@ -37,9 +36,8 @@
   cursor: pointer;
 }
 
-.code-send-button:active,
-.code-send-button:focus,
-.code-send-button:hover {
+.code-send-button:hover,
+.profile-link-button:hover {
   outline: none;
   color: #ffffff;
   background: #5f5fbb;

@@ -123,8 +123,6 @@
   cursor: pointer;
 }
 
-.login__submit:active,
-.login__submit:focus,
 .login__submit:hover {
   outline: none;
   border-color: #5f5fbb;

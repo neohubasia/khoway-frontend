@@ -1,0 +1,35 @@
+.user-card {
+  border: none;
+  color: #555;
+}
+
+.user-avatar {
+  width: 120px;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+}
+
+.user-avatar img {
+  border-radius: 50%;
+  border: solid 5px transparent;
+}
+
+.room-create-button {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  transition: 0.2s;
+}
+
+.room-create-button:hover {
+  outline: none;
+  color: #ffffff;
+  background: #5f5fbb;
+  border-color: #5f5fbb;
+}
+
+.sign-out-link {
+  /* color: #dc3545; */
+  cursor: pointer;
+  text-decoration: none;
+}
