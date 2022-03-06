@@ -4,7 +4,7 @@ import { fakeAuth } from "../../services/FakeAuth";
 
 import "./Auth.css";
 
-const Login = () => {
+const Register = () => {
   const [redirectToReferrer, setRedirectToReferrer] = React.useState(false);
 
   const { state } = useLocation();
@@ -26,11 +26,19 @@ const Login = () => {
         <div class="screen__content">
           <form class="login">
             <div class="login__field">
+              <i class="login__icon far fa-id-badge"></i>
+              <input
+                type="text"
+                class="login__input"
+                placeholder="Enter Full Name"
+              />
+            </div>
+            <div class="login__field">
               <i class="login__icon fas fa-user"></i>
               <input
                 type="text"
                 class="login__input"
-                placeholder="Enter username"
+                placeholder="Enter Username"
               />
             </div>
             <div class="login__field">
@@ -38,20 +46,24 @@ const Login = () => {
               <input
                 type="password"
                 class="login__input"
-                placeholder="Enter password"
+                placeholder="Enter Password"
               />
             </div>
             <button class="button login__submit">
-              <span class="button__text">Log In Now</span>
+              <span class="button__text">Sign Up</span>
               <i class="button__icon fas fa-chevron-right"></i>
             </button>
           </form>
           <div class="social-login">
-            <h3>log in via</h3>
+            <h5>Already have an account?</h5>
             <div class="social-icons">
-              <a href="#" class="social-login__icon fab fa-instagram"></a>
+              <a
+                href="/login"
+                class="social-login__icon fa fa-long-arrow-alt-right"
+              ></a>
+              {/* <a href="#" class="social-login__icon fab fa-instagram"></a>
               <a href="#" class="social-login__icon fab fa-facebook"></a>
-              <a href="#" class="social-login__icon fab fa-twitter"></a>
+              <a href="#" class="social-login__icon fab fa-twitter"></a> */}
             </div>
           </div>
         </div>
@@ -66,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

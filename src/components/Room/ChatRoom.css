@@ -7,6 +7,9 @@
 
 .chat-room-name {
   text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  background: #666699;
 }
 
 /* Message Container */
@@ -14,8 +17,8 @@
 .messages-container {
   position: absolute;
   width: 100%;
-  height: 94vh;
-  bottom: 0px;
+  height: 82vh;
+  bottom: 80px;
   overflow: auto;
 }
 

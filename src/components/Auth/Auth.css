@@ -142,10 +142,9 @@
 
 .social-login {
   position: absolute;
-  bottom: 0px;
   right: 0px;
-  width: 160px;
-  height: 140px;
+  bottom: 0px;
+  width: 200px;
   color: #ffffff;
   text-align: center;
 }
@@ -157,12 +156,12 @@
 }
 
 .social-login__icon {
-  padding: 20px 10px;
+  padding: 12px;
   color: #ffffff;
   text-decoration: none;
-  text-shadow: 0px 0px 5px #5f5fbb;
+  transition: 3s;
 }
 
 .social-login__icon:hover {
-  transform: scale(1.5);
+  transform: translate(30px, 0px);
 }
