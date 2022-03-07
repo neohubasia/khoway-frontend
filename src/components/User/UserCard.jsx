@@ -52,7 +52,7 @@ const UserCard = () => {
       <div className="card-body">
         <h4 className="card-title text-center">Wai Phyo Naing</h4>
         <div className="card-button my-4">
-          <Link to={`/room/#new`} className="btn col-12 room-create-button">
+          <Link to={`/new/room`} className="btn col-12 room-create-button">
             Create Room
           </Link>
         </div>

@@ -2,42 +2,41 @@
 
 .home-container {
   position: fixed;
+  top: 48%;
   left: 20%;
   right: 20%;
-  top: 50%;
   display: flex;
   transform: translate(0, -50%);
   flex-direction: column;
 }
 
-.code-input {
-  padding: 12px 12px;
+.room-input {
+  margin: 12px 0px;
+  padding: 8px 12px;
   font-size: 24px;
   border: none;
   border-bottom: 2px solid #ddd;
 }
 
-.code-input:hover {
+.room-input:hover {
   outline: none;
-  border-bottom-color: #5f5fbb;
+  border-color: #5f5fbb;
 }
 
-.code-send-button,
-.profile-link-button {
+.room-submit-button,
+.profile-view-button {
   margin-top: 30px;
-  padding: 12px 12px;
+  padding: 8px 12px;
   font-size: 24px;
-  text-align: center;
-  text-decoration: none;
   color: #5f5fbb;
   background: #ffffff;
   border: 2px solid #ddd;
-  transition: 0.2s;
-  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
-.code-send-button:hover,
-.profile-link-button:hover {
+.room-submit-button:hover,
+.profile-view-button:hover {
   outline: none;
   color: #ffffff;
   background: #5f5fbb;

@@ -17,12 +17,12 @@ const Home = () => {
         value={roomCode}
         placeholder="Enter Code"
         onChange={handleRoomCodeChange}
-        className="code-input"
+        className="room-input"
       />
-      <Link to={`/room/${roomCode}`} className="code-send-button">
+      <Link to={`/room/${roomCode}`} className="room-submit-button">
         Join Room
       </Link>
-      <Link to={`/profile`} className="profile-link-button">
+      <Link to={`/profile`} className="profile-view-button">
         Go Profile
       </Link>
     </div>

@@ -10,4 +10,8 @@ export const authUser = {
     localStorage.removeItem("user");
     setTimeout(cb, 100);
   },
+  getUser() {
+    const user = localStorage.getItem("user");
+    return JSON.parse(user);
+  },
 };

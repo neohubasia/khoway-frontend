@@ -65,7 +65,7 @@ const Login = () => {
                 onChange={handleOnChange}
               />
             </div>
-            <button className="button login__submit">
+            <button type="submit" className="button login__submit">
               <span className="button__text">Sign In</span>
               <i className="button__icon fas fa-chevron-right"></i>
             </button>
