@@ -25,7 +25,7 @@ const Login = () => {
     try {
       const { data } = await signIn(signInData);
       data.status === "SUCCESS"
-        ? authUser.authenticate(() => {
+        ? authUser.signIn(data.data, () => {
             setRedirectTo(true);
           })
         : setRedirectTo(false);

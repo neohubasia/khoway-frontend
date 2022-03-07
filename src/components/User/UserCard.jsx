@@ -1,16 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect, useLocation } from "react-router-dom";
 import { authUser } from "../../services/AuthUser";
 
 import "./UserCard.css";
 
 const UserTab = () => {
+  const { state } = useLocation();
+  const [redirectTo, setRedirectTo] = React.useState(false);
+
   const handleSingOut = async (e) => {
     e.preventDefault();
-    authUser.signout(() => {
-      console.log("Sign out event is occured.");
+    authUser.signOut(() => {
+      setRedirectTo(true);
     });
   };
+
+  if (redirectTo === true) {
+    return <Redirect to={state?.from || "/"} />;
+  }
 
   return (
     <ul className="list-group list-group-flush">

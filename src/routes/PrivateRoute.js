@@ -7,7 +7,7 @@ export const PrivateRoute = ({ children, ...rest }) => {
     <Route
       {...rest}
       render={({ location }) => {
-        return authUser.isAuthenticated === true ? (
+        return authUser.isAuth === true ? (
           children
         ) : (
           <Redirect

@@ -1,13 +1,14 @@
 .user-card {
-  border: none;
-  color: #555;
+  padding: 20px;
+  margin: 40px 20px;
+  box-shadow: 0px 0px 5px #5f5fbb;
 }
 
 .user-avatar {
   width: 120px;
   margin: auto;
   border-radius: 50%;
-  border: 5px solid #ddd;
+  border: 5px solid #5f5fbb;
 }
 
 .user-avatar img {
@@ -17,7 +18,7 @@
 
 .room-create-button {
   background: #ffffff;
-  border: 2px solid #ddd;
+  border: 2px solid #bdbdff;
   transition: 0.2s;
 }
 

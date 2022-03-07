@@ -26,7 +26,7 @@ const Register = () => {
     try {
       const { data } = await signUp(signUpData);
       data.status === "SUCCESS"
-        ? authUser.authenticate(() => {
+        ? authUser.signIn(data.data, () => {
             setRedirectTo(true);
           })
         : setRedirectTo(false);

@@ -1,1 +1,4 @@
-/* Profile CSS */
+.sticky-top {
+  /* position: sticky; */
+  top: 44px;
+}

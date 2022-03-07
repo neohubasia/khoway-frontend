@@ -1,11 +1,13 @@
 export const authUser = {
-  isAuthenticated: false,
-  authenticate(cb) {
-    this.isAuthenticated = true;
-    setTimeout(cb, 100); // fake async
+  isAuth: localStorage.getItem("user") ? true : false,
+  signIn(newUser, cb) {
+    this.isAuth = true;
+    localStorage.setItem("user", JSON.stringify(newUser));
+    setTimeout(cb, 100);
   },
-  signout(cb) {
-    this.isAuthenticated = false;
-    setTimeout(cb, 100); // fake async
+  signOut(cb) {
+    this.isAuth = false;
+    localStorage.removeItem("user");
+    setTimeout(cb, 100);
   },
 };
