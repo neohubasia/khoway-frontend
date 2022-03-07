@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 import { Link } from "react-router-dom";
 import { getRoomList } from "../../services/RestAPI";
 
@@ -25,20 +26,22 @@ const UserFeed = () => {
 
   return respData.map((room, idx) => (
     <Link key={idx} to={`/room/${room._id}`} className="card feed-card">
-      <img
-        alt="Cover"
-        className="card-img-top"
-        src="https://via.placeholder.com/240x100.png"
-      />
+      <img alt="Cover" className="card-img-top" src={room.cover_img} />
       <div className="card-body">
-        <h5 className="card-title">{room.name}</h5>
-        <p className="card-text">
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
+        <h5 className="card-title">
+          <i className="fa fa-globe" />
+          &nbsp; {room.name}
+        </h5>
+        <p className="card-text ml-5">
+          <i className="fa fa-paragraph" />
+          <span className="px-3">{room.description}</span>
         </p>
       </div>
       <div className="card-footer">
-        <small className="text-muted">Last updated 3 mins ago</small>
+        <small className="text-muted">
+          <i className="fa fa-clock" />
+          &nbsp; {moment(room.created_at).format("DD/MM/YYYY, hh:mm A")}
+        </small>
       </div>
     </Link>
   ));

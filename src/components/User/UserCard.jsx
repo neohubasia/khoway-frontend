@@ -40,17 +40,15 @@ const UserTab = () => {
 };
 
 const UserCard = () => {
+  const user = authUser.getUser();
+
   return (
     <div className="user-card">
       <div className="user-avatar">
-        <img
-          src={"../../../khoway-2.png"}
-          className="card-img-top"
-          alt="Profile"
-        />
+        <img src={user.avatar} className="card-img-top" alt="Profile" />
       </div>
       <div className="card-body">
-        <h4 className="card-title text-center">Wai Phyo Naing</h4>
+        <h4 className="card-title text-center">{user.fullname}</h4>
         <div className="card-button my-4">
           <Link to={`/new/room`} className="btn col-12 room-create-button">
             Create Room
